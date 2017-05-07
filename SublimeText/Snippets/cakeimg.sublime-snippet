@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<?= \$this->Html->image('$1', ['alt' => '$2','class'=>'$3']); ?>]]></content>
+	<tabTrigger>cakeimg</tabTrigger>
+	<description>CakePHP: $this->Html->image()</description>
+</snippet>

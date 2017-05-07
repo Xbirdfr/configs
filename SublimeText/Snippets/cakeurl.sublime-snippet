@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<?= \$this->Url->build(['controller'=>'$1', 'action'=>'$2','prefix'=>${3:false}],true); ?>]]></content>
+	<tabTrigger>cakeurl</tabTrigger>
+	<description>CakePHP: $this->Url->build()</description>
+</snippet>

@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<?= \$this->Html->link('$1',['controller'=>'$2', 'action'=>'$3','prefix'=>${4:false}],['escape'=>${5:false},'class'=>'$6']); ?>]]></content>
+	<tabTrigger>cakelink</tabTrigger>
+	<description>CakePHP: $this->Html->link()</description>
+</snippet>
