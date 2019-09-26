@@ -5,7 +5,7 @@
 	"Cakephp link generator": {
 		"prefix": "cakelink",
 		"body": [
-		  "<?= $this->Html->link('${1:link}',['controller'=>'${2:controller}', 'action'=>'${2:action}','prefix'=>${3:false}],['escape'=>${4:false},'class'=>'${5:class}']); ?>"
+		  "<?= \\$this->Html->link('${1:link}',['controller'=>'${2:controller}', 'action'=>'${3:action}','prefix'=>${4:false}],['escape'=>${5:false},'class'=>'']); ?>"
 		],
 		"description": "Cakephp link generator"
 	  },
@@ -13,7 +13,7 @@
 	  "Cakephp img generator": {
 		"prefix": "cakeimg",
 		"body": [
-		  "<?= $this->Html->image('${1:nomfichier}', ['alt' => '${2:textalternatif}']); ?>"
+		  "<?= \\$this->Html->image('${1:nomfichier}', ['alt' => '${2:textalternatif}']); ?>"
 		],
 		"description": "Cakephp link generator"
 	  },
@@ -21,7 +21,7 @@
 	  "Cakephp URL generator": {
 		"prefix": "cakeurl",
 		"body": [
-		  "<?= $this->Url->build(['controller'=>'${1:controller}', 'action'=>'${2:action}','prefix'=>${3:false}],true); ?>"
+		  "<?= \\$this->Url->build(['controller'=>'${1:controller}', 'action'=>'${2:action}','prefix'=>${3:false}],true); ?>"
 		],
 		"description": "Cakephp link generator"
 	  },
@@ -29,7 +29,7 @@
 	  "Cakephp redirect generator": {
 		"prefix": "cakeredirect",
 		"body": [
-		  "return $this->redirect(['controller' => '${1:controller}', 'action' => '${2:action}']); exit();"
+		  "return \\$this->redirect(['controller' => '${1:controller}', 'action' => '${2:action}']); exit();"
 		],
 		"description": "Cakephp redirect generator"
 	  }
