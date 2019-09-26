@@ -1,0 +1,34 @@
+{
+
+	"Cakephp link generator": {
+		"prefix": "cakelink",
+		"body": [
+		  "<?= $this->Html->link('${1:link}',['controller'=>'${2:controller}', 'action'=>'${2:action}','prefix'=>${3:false}],['escape'=>${4:false},'class'=>'${5:class}']); ?>"
+		],
+		"description": "Cakephp link generator"
+	  },
+
+	  "Cakephp img generator": {
+		"prefix": "cakeimg",
+		"body": [
+		  "<?= $this->Html->image('${1:nomfichier}', ['alt' => '${2:textalternatif}']); ?>"
+		],
+		"description": "Cakephp link generator"
+	  },
+
+	  "Cakephp URL generator": {
+		"prefix": "cakeurl",
+		"body": [
+		  "<?= $this->Url->build(['controller'=>'${1:controller}', 'action'=>'${2:action}','prefix'=>${3:false}],true); ?>"
+		],
+		"description": "Cakephp link generator"
+	  },
+
+	  "Cakephp redirect generator": {
+		"prefix": "cakeredirect",
+		"body": [
+		  "return $this->redirect(['controller' => '${1:controller}', 'action' => '${2:action}']); exit();"
+		],
+		"description": "Cakephp redirect generator"
+	  }
+}
