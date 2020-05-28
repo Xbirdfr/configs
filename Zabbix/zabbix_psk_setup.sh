@@ -2,8 +2,8 @@ echo 'Xbird.me Zabbix PSK setup'
 echo '----------------------------------------'
 echo 'Answer custom parameters, or enter to usse default config'
 read -e -i "/etc/zabbix" -p "Config Path: " path
-read -e -i "zabbix_agent2.conf.test" -p "Zabbix agent config file: " config_file_name
-read -e -i "zabbix_agentd.psk.test" -p "Zabbix agent PSK file: " psk_file_name
+read -e -i "zabbix_agent2.conf" -p "Zabbix agent config file: " config_file_name
+read -e -i "zabbix_agentd.psk" -p "Zabbix agent PSK file: " psk_file_name
 read -e -i $HOSTNAME -p "PSK identity  (you have to set the same in Zabbix host configuration) : " pskidentity
 
 
