@@ -3,7 +3,7 @@ echo '----------------------------------------'
 echo 'Answer custom parameters, or enter to usse default config'
 read -e -i "/etc/zabbix" -p "Config Path: " path
 
-if [ ! -d path ] 
+if [ ! -d $path ] 
 then
     echo "Directory $path DOES NOT exists." 
     exit 1 # die
